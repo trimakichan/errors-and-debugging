@@ -9,8 +9,8 @@ def test_get_3rd_value():
     assert get_3rd_value([0, 1]) == None
 
 def get_last_value(my_list):
-    item_count = len(my_list)
-    if item_count <= 0:
+    # The better approch is not my_list
+    if not my_list:
         return None
     
     return my_list[-1]
